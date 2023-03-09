@@ -1,0 +1,46 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.bayan__meme-pic {
+  display: none;
+  width: 40%;
+}
+
+img:first-of-type {
+  display: block;
+}
+
+.bayan__meme {
+  min-height: 50px;
+  width: 80%;
+  border-top: 1px grey solid;
+  padding-bottom: 1%;
+}
+
+.bayan__memes-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  padding-top: 5%;
+}
+
+.bayan__meme-heading {
+  padding: 2% 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.bayan__meme-icon {
+  background: url(/cssBayan/cssBayan/img/plus.svg) no-repeat;
+  height: 32px;
+  width: 32px;
+}
