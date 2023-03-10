@@ -8,14 +8,22 @@ html {
   scroll-behavior: smooth;
 }
 
-.bayan__meme-pic {
-  display: none;
-  width: 40%;
+.bayan__wrapper {
+  padding: 3%;
 }
 
-img:first-of-type {
-  display: block;
+.bayan__heading {
+  text-align: center;
 }
+
+.bayan__meme-pic {
+  /* visibility: hidden; */
+  width: 40vw;
+}
+
+/* img:first-of-type {
+  display: block;
+} */
 
 .bayan__meme {
   min-height: 50px;
