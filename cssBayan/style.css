@@ -8,12 +8,19 @@ html {
   scroll-behavior: smooth;
 }
 
+body {
+  font-family: "Comic Sans MS", "Comic Sans", cursive;
+  background-image: url(./img/background.jpg);
+  background-size: 15%;
+  overflow-x: hidden;
+}
+
 img {
-  width: 30vw;
+  width: 25vw;
 }
 
 .bayan__wrapper {
-  padding: 3%;
+  padding: 2rem;
   min-width: 100vw;
   display: flex;
   flex-direction: column;
@@ -22,10 +29,11 @@ img {
 
 .bayan__heading {
   text-align: center;
+  font-size: 1.8rem;
 }
 
 .bayan__memes-wrapper {
-  padding: 5% 0;
+  padding-top: 1rem;
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -37,12 +45,13 @@ img {
   justify-content: space-between;
   align-items: center;
   width: 100%;
+  padding: 0.5rem;
 }
 
 /* visible pics on hover */
 .bayan__meme {
-  border-top: 1px grey solid;
-  padding: 1% 0;
+  padding: 1rem 0;
+  margin: 1rem 0;
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -68,8 +77,8 @@ img {
 /* visible icons on hover */
 .bayan__meme-icon {
   background: url(/cssBayan/cssBayan/img/plus.svg) no-repeat;
-  height: 32px;
-  width: 32px;
+  height: 2rem;
+  width: 2rem;
   visibility: hidden;
   opacity: 0;
   transition: 0.3s;
@@ -84,4 +93,35 @@ img {
 /* changed icons on toggled buttons */
 .bayan__radio:checked ~ .bayan__meme-heading>.bayan__meme-icon {
   rotate: 45deg;
+}
+
+
+.bayan__meme:nth-child(1) {
+  background-color: #FFE4B4;
+  box-shadow: 1rem 1rem 0.1rem 0.1rem #97948a;
+  border: #BFAB88 solid 0.13rem;
+}
+
+.bayan__meme:nth-child(2) {
+  background-color: #B9BAD6;
+  box-shadow: 1rem 1rem 0.1rem 0.1rem #97948a;
+  border: #818296 solid 0.13rem;
+}
+
+.bayan__meme:nth-child(3) {
+  background-color: #B9D6C0;
+  box-shadow: 1rem 1rem 0.1rem 0.1rem #97948a;
+  border: #819686 solid 0.13rem;
+}
+
+.bayan__meme:nth-child(4) {
+  background-color: #B9C1D6;
+  box-shadow: 1rem 1rem 0.1rem 0.1rem #97948a;
+  border: #818796 solid 0.13rem;
+}
+
+.bayan__meme:nth-child(5) {
+  background-color: #D6B9D0;
+  box-shadow: 1rem 1rem 0.1rem 0.1rem #97948a;
+  border: #968192 solid 0.13rem;
 }
