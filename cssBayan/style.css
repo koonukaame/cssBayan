@@ -10,34 +10,34 @@ html {
 
 .bayan__wrapper {
   padding: 3%;
-}
-
-.bayan__heading {
-  text-align: center;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .bayan__meme-pic {
-  /* visibility: hidden; */
-  width: 40vw;
+  opacity: 0;
+  width: 0vw;
+  transition: 0.4s;
 }
 
-/* img:first-of-type {
-  display: block;
-} */
+.bayan__meme:hover .bayan__meme-pic {
+  opacity: 1;
+  width: 20vw;
+  transition: 0.4s;
+}
+
 
 .bayan__meme {
-  min-height: 50px;
-  width: 80%;
+  width: 100%;
   border-top: 1px grey solid;
   padding-bottom: 1%;
 }
 
 .bayan__memes-wrapper {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  align-items: center;
   padding-top: 5%;
+  width: 80vw;
 }
 
 .bayan__meme-heading {
@@ -51,4 +51,13 @@ html {
   background: url(/cssBayan/cssBayan/img/plus.svg) no-repeat;
   height: 32px;
   width: 32px;
+  visibility: hidden;
+  opacity: 0;
+  transition: 0.3s;
+}
+
+.bayan__memes-wrapper:hover .bayan__meme-icon {
+  visibility: visible;
+  opacity: 1;
+  transition: 0.3s;
 }
