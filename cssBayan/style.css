@@ -5,7 +5,7 @@
 }
 
 body {
-  font-family: "Comic Sans MS", "Comic Sans", cursive;
+  font-family: "Comic Sans MS", "Comic Sans";
   background-image: url(./img/background.jpg);
   background-size: 15%;
   overflow-x: hidden;
@@ -30,7 +30,7 @@ img {
 
 .bayan__memes-wrapper {
   padding-top: 1rem;
-  width: 100%;
+  width: 80%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -51,7 +51,7 @@ img {
   display: flex;
   align-items: center;
   flex-direction: column;
-  width: 80%;
+  width: 100%;
 }
 
 .bayan__meme:hover .bayan__meme-pic {
