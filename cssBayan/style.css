@@ -10,7 +10,7 @@ html {
 
 .bayan__wrapper {
   padding: 3%;
-  width: 100%;
+  width: 100vw;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -19,20 +19,25 @@ html {
 .bayan__meme-pic {
   opacity: 0;
   width: 0vw;
-  transition: 0.4s;
+}
+
+.bayan__heading {
+  text-align: center;
 }
 
 .bayan__meme:hover .bayan__meme-pic {
   opacity: 1;
-  width: 20vw;
+  width: 30vw;
   transition: 0.4s;
 }
 
 
 .bayan__meme {
-  width: 100%;
   border-top: 1px grey solid;
-  padding-bottom: 1%;
+  padding: 1% 0;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
 }
 
 .bayan__memes-wrapper {
@@ -41,10 +46,11 @@ html {
 }
 
 .bayan__meme-heading {
-  padding: 2% 0;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  width: 100%;
+
 }
 
 .bayan__meme-icon {
