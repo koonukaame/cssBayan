@@ -80,3 +80,8 @@ img {
   opacity: 1;
   transition: 0.3s;
 }
+
+/* changed icons on toggled buttons */
+.bayan__radio:checked ~ .bayan__meme-heading>.bayan__meme-icon {
+  rotate: 45deg;
+}
