@@ -8,6 +8,20 @@ html {
   scroll-behavior: smooth;
 }
 
+a {
+  text-decoration: none;
+  cursor: pointer;
+  color: black;
+}
+
+a:visited {
+  color: black;
+}
+
+a:active {
+  color: black;
+}
+
 .bayan__wrapper {
   padding: 3%;
   width: 100vw;
@@ -42,7 +56,7 @@ html {
 }
 
 .bayan__memes-wrapper {
-  padding-top: 5%;
+  padding: 5% 0;
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -70,4 +84,34 @@ html {
   visibility: visible;
   opacity: 1;
   transition: 0.3s;
+}
+
+#bayan__meme-pic1:target{
+  visibility: visible;
+  opacity: 1;
+  width: 30vw;
+}
+
+#bayan__meme-pic2:target{
+  visibility: visible;
+  opacity: 1;
+  width: 30vw;
+}
+
+#bayan__meme-pic3:target{
+  visibility: visible;
+  opacity: 1;
+  width: 30vw;
+}
+
+#bayan__meme-pic4:target{
+  visibility: visible;
+  opacity: 1;
+  width: 30vw;
+}
+
+#bayan__meme-pic5:target{
+  visibility: visible;
+  opacity: 1;
+  width: 30vw;
 }
