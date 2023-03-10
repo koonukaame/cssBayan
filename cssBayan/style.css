@@ -8,51 +8,20 @@ html {
   scroll-behavior: smooth;
 }
 
-a {
-  text-decoration: none;
-  cursor: pointer;
-  color: black;
-}
-
-a:visited {
-  color: black;
-}
-
-a:active {
-  color: black;
+img {
+  width: 30vw;
 }
 
 .bayan__wrapper {
   padding: 3%;
-  width: 100vw;
+  min-width: 100vw;
   display: flex;
   flex-direction: column;
   align-items: center;
-}
-
-.bayan__meme-pic {
-  opacity: 0;
-  width: 0vw;
 }
 
 .bayan__heading {
   text-align: center;
-}
-
-.bayan__meme:hover .bayan__meme-pic {
-  opacity: 1;
-  width: 30vw;
-  transition: 0.4s;
-}
-
-
-.bayan__meme {
-  border-top: 1px grey solid;
-  padding: 1% 0;
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  width: 80%;
 }
 
 .bayan__memes-wrapper {
@@ -68,9 +37,35 @@ a:active {
   justify-content: space-between;
   align-items: center;
   width: 100%;
-
 }
 
+/* visible pics on hover */
+.bayan__meme {
+  border-top: 1px grey solid;
+  padding: 1% 0;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 80%;
+}
+
+.bayan__meme:hover .bayan__meme-pic {
+  height: auto;
+  overflow: visible;
+}
+
+/* visible pics on toggled buttons */
+.bayan__meme-pic {
+  height: 0;
+  overflow: hidden;
+}
+
+.bayan__radio:checked ~ .bayan__meme-pic {
+  height: auto;
+  overflow: visible;
+}
+
+/* visible icons on hover */
 .bayan__meme-icon {
   background: url(/cssBayan/cssBayan/img/plus.svg) no-repeat;
   height: 32px;
@@ -84,34 +79,4 @@ a:active {
   visibility: visible;
   opacity: 1;
   transition: 0.3s;
-}
-
-#bayan__meme-pic1:target{
-  visibility: visible;
-  opacity: 1;
-  width: 30vw;
-}
-
-#bayan__meme-pic2:target{
-  visibility: visible;
-  opacity: 1;
-  width: 30vw;
-}
-
-#bayan__meme-pic3:target{
-  visibility: visible;
-  opacity: 1;
-  width: 30vw;
-}
-
-#bayan__meme-pic4:target{
-  visibility: visible;
-  opacity: 1;
-  width: 30vw;
-}
-
-#bayan__meme-pic5:target{
-  visibility: visible;
-  opacity: 1;
-  width: 30vw;
 }
