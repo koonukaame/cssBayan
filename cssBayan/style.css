@@ -4,10 +4,6 @@
   box-sizing: border-box;
 }
 
-html {
-  scroll-behavior: smooth;
-}
-
 body {
   font-family: "Comic Sans MS", "Comic Sans", cursive;
   background-image: url(./img/background.jpg);
