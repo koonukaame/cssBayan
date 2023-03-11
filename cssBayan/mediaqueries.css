@@ -1,7 +1,7 @@
 @media (any-hover: hover) {
   /* hover on pics */
   img:hover {
-    width: 30vw;
+    width: 35vw;
     transition: 0.5s;
   }
 
@@ -23,5 +23,65 @@
   /* changed icons on hover */
   .bayan__meme:hover .bayan__meme-icon {
     rotate: 45deg;
+  }
+}
+
+@media screen and (max-device-width: 819px) and (hover: none) {
+  img {
+    width: 30vw;
+  }
+
+  body {
+    font-size: 2vw;
+  }
+
+  .bayan__meme-icon {
+    visibility: visible;
+    opacity: 1;
+    transition: 1s;
+  }
+
+  .bayan__meme {
+    padding: 1vw;
+    margin: 3vh;
+  }
+
+  .bayan__meme-text {
+    transition: 1s;
+    font-size: 4vw;
+  }
+}
+
+@media screen and (min-device-width: 820px) and (max-device-width: 1919px) and (hover: none) {
+  .bayan__meme-icon {
+    visibility: visible;
+    opacity: 1;
+    transition: 1s;
+  }
+
+  .bayan__meme {
+    padding: 1vw;
+    margin: 2vh;
+  }
+
+  .bayan__meme-text {
+    transition: 1s;
+    font-size: 2rem;
+  }
+
+  img {
+    width: 30vw;
+  }
+
+  body {
+    font-size: 1rem;
+  }
+}
+
+@media screen and (min-device-width: 1920px) and (hover: none) {
+  .bayan__meme-icon {
+    visibility: visible;
+    opacity: 1;
+    transition: 1s;
   }
 }
