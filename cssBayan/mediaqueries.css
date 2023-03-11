@@ -1,0 +1,27 @@
+@media (any-hover: hover) {
+  /* hover on pics */
+  img:hover {
+    width: 30vw;
+    transition: 0.5s;
+  }
+
+  /* visible pics on hover */
+  .bayan__meme:hover .bayan__meme-pic {
+    height: auto;
+    overflow: visible;
+    opacity: 1;
+    transition: 0.5s;
+  }
+
+  /* visible icons on hover */
+  .bayan__memes-wrapper:hover .bayan__meme-icon {
+    visibility: visible;
+    opacity: 1;
+    transition: 0.5s;
+  }
+
+  /* changed icons on hover */
+  .bayan__meme:hover .bayan__meme-icon {
+    rotate: 45deg;
+  }
+}
