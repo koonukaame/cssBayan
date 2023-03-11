@@ -5,7 +5,7 @@
 }
 
 body {
-  font-family: "Comic Sans MS", "Comic Sans";
+  font-family: "Comic Sans MS";
   background-image: url(./img/background.jpg);
   background-size: 15%;
   overflow-x: hidden;
@@ -13,6 +13,11 @@ body {
 
 img {
   width: 25vw;
+}
+
+@font-face {
+  font-family: "Comic Sans MS";
+  src: url(./font/ComicSansMS.ttf) format("truetype");
 }
 
 .bayan__wrapper {
@@ -57,17 +62,23 @@ img {
 .bayan__meme:hover .bayan__meme-pic {
   height: auto;
   overflow: visible;
+  opacity: 1;
+  transition: 0.5s;
 }
 
 /* visible pics on toggled buttons */
 .bayan__meme-pic {
   height: 0;
   overflow: hidden;
+  opacity: 0;
+  transition: 0.5s;
 }
 
 .bayan__radio:checked ~ .bayan__meme-pic {
   height: auto;
   overflow: visible;
+  opacity: 1;
+  transition: 0.5s;
 }
 
 /* visible icons on hover */
@@ -91,6 +102,10 @@ img {
   rotate: 45deg;
 }
 
+/* changed icons on hover */
+  .bayan__meme:hover .bayan__meme-icon {
+    rotate: 45deg;
+  }
 
 .bayan__meme:nth-child(1) {
   background-color: #FFE4B4;
