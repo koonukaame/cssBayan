@@ -57,6 +57,7 @@ img {
   align-items: center;
   width: 100%;
   padding: 0.5rem;
+  cursor: pointer;
 }
 
 .bayan__meme:nth-child(1) {
