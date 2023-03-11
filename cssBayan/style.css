@@ -9,6 +9,7 @@ body {
   background-image: url(./img/background.jpg);
   background-size: 15%;
   overflow-x: hidden;
+  font-size: 1vw;
 }
 
 img {
@@ -31,12 +32,11 @@ img {
 
 .bayan__heading {
   text-align: center;
-  font-size: 1.8rem;
 }
 
 .bayan__memes-wrapper {
   padding-top: 1rem;
-  width: 80%;
+  width: 80vw;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -46,6 +46,7 @@ img {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  align-items: center;
   width: 100%;
 }
 
@@ -89,22 +90,24 @@ img {
 }
 
 .bayan__meme {
-  padding: 1rem 0;
-  margin: 1rem 0;
+  padding: 1vw 0;
+  margin: 2vw 0;
   display: flex;
   align-items: center;
   flex-direction: column;
   width: 100%;
-  transition: 1.5s;
+  transition: 1s;
 }
 
 .bayan__meme-icon {
-  background: url(/cssBayan/cssBayan/img/plus.svg) no-repeat;
-  height: 2rem;
-  width: 2rem;
+  background-image: url(/cssBayan/cssBayan/img/plus.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 3vh;
+  width: 3vw;
   visibility: hidden;
   opacity: 0;
-  transition: 1.5s;
+  transition: 1s;
 }
 
 /* visible pics on toggled buttons */
@@ -112,7 +115,8 @@ img {
   height: 0;
   overflow: hidden;
   opacity: 0;
-  transition: 1.5s;
+  transition: 1s;
+  padding-top: 2vh;
 }
 
 .bayan__radio:checked ~ .bayan__meme-heading .bayan__meme-pic {
@@ -123,13 +127,13 @@ img {
 }
 
 /* changed icons on toggled buttons */
-.bayan__radio:checked ~ .bayan__meme-heading>.bayan__meme-icon {
+.bayan__radio:checked ~ .bayan__meme-heading .bayan__meme-icon {
   rotate: 45deg;
 }
 
 /* changed pics on click */
 .bayan__meme-filter {
-  transition: 1.5s;
+  transition: 1s;
 }
 
 .bayan__meme:nth-child(1):active .bayan__meme-filter {
@@ -164,7 +168,8 @@ img {
 
 /* changed text color on click */
 .bayan__meme-text {
-  transition: 1.5s;
+  transition: 1s;
+  font-size: 2vw;
 }
 
 .bayan__meme:nth-child(1):active .bayan__meme-text {
